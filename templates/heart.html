@@ -1,0 +1,92 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Ultra&amp;display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="static\heart.css"> 
+          
+    
+<link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPTMyYWM2MzUwOGEmYXR0aWQ9MC4yJnBlcm1tc2dpZD1tc2ctZjoxNjk2NTcyMDYwNjE0ODIzNzg2JnRoPTE3OGI2ZjRjZTBjYzhmNmEmdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2tuYWRzbmg3NiZzYWRkYmF0PUFOR2pkSi1GdnNaU0x6ZFFMbTlQMnhyVHFVQ1BUY2FndjNtbGc1ZXFCZzh2UFZUU3czZGdBbnBVZkdwYkxFSWFRNVN4QmtUY1M1MXlldHQ1c1lYYU5YVW44UjcwYTVwNHhlMEJFWEJIcXVHWW1ETy04cmota2ktQ29uZURDcEUxM2FKUHJweTlkalR2eUdIaW8xTE1IM3dzWEttQ2ozYmh4Yy1acjg4d2lpMmtiYURPZkZKaHBETXNITjNLMjJKbnhWVVZ4LTBiMEhJdGpUdVFBZkJZRW9lTjBhbW1XcV9PNEVtQXpZTXZqZ1pVWjhRSkw3S0VkRXRqSkZVVFFmbW1YWEJUdks0YTJQTGh0V3haQlQybjNBem9COTR6SDEzRmhybzVEMkRvZl9kVDNwRnpQNm9rTFVyaDNyZHIxckR0bWJnbHQ2VnQzNFVKTmU1OGdiMjZ3aVJwVjhSMlBEM2RJdU9Ha3ZCVEM0eGhEbnU0Y3JMaFVrVkpGQlh1aTlQN0FJdTlCQW5DNU90ejhYVnZsZHd2R2pnZ3ZmYlNSMWZNa0dYbTU2U3hBSENNNjd5U0huYXB0RGZkUkpVY0xvNk80RmF3RlFJVWFpOEhZT19TVEhGZFE1cmgyR2RZcGc2LXV1NXZqNmJhcFc0aDdkREdaV1k5cmVDbnVmV3ZCYzhuX1hyUFB6b2ZPTmFDUzVvWHAyeEZ0STdqcFZmbkpnVWNwQUoycjN1bHJOZHFTVFFJc3FvVndEWUg3WmtGdVBPLVhWaVpnbFRBSzdaUWNwRXdqejl1RTNOTU16VFlUQUstdGVhbHZhYlNBZ0gxZjczMTVzdV92Y3oyYXllQW55Mml3eVBFY2t2V2FiZjhaTFNNVUJRbElUakVYUFlURTNLdGxhaW1IVEVSMnZnYkpkNGNfZnpFaWFKQUNYZFh3UzA"><style>
+    body {
+     background-image: url('https://github.com/ananya-menon/Depression/blob/main/WhatsApp%20Image%202021-04-03%20at%2012.51.22%20PM.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+         object-fit: cover;
+        
+    }
+</style>
+
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>HEART DISEASE</h1>
+        
+    </header>
+
+    <br>
+
+    <div class="container">
+        <form action="/predict" method="POST">
+
+
+            <input type="text" name="sex" placeholder="sex" required="required">
+            <br>
+            <input type="text" name="cp" placeholder="cp" required="required">
+            <br>
+            <input type="text" name="trestbps" placeholder="trestbps" required="required">
+            <br>
+            <input type="text" name="chol" placeholder="chol" required="required">
+            <br>
+            <input type="text" name="fbs" placeholder="fbs" required="required">
+            <br>
+            <input type="text" name="restecg" placeholder="restecg" required="required">
+            <br>
+            <input type="text" name="thalach" placeholder="thalach" required="required">
+            <br>
+            <input type="text" name="exang" placeholder="exang" required="required">
+            <br>
+            <input type="text" name="oldpeak" placeholder="oldpeak" required="required">
+            <br>
+            <input type="text" name="slope" placeholder="slope" required="required">
+            <br>
+            <input type="text" name="ca" placeholder="ca" required="required">
+            <br> 
+            <input type="text" name="thal" placeholder="thal" required="required">
+            <br>
+            <button type="submit" class="btn btn-outline-warning">Predict</button>
+
+
+        </form>
+
+        <br>
+        <br>
+
+        <h3><strong>{{ prediction_text }}</strong></h3>
+
+        <br>
+        <br>
+
+        <p>ANANYA NAVYA BHAVANA</p>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</body></html>
